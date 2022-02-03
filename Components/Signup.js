@@ -49,9 +49,7 @@ const Signup = () => {
           Email Already Exist.
         </div>
       )}
-      <button className="btn btn-primary" onClick={() => router.push("/login")}>
-        Click Me
-      </button>
+
       <div className="position-absolute top-50 start-50 translate-middle">
         <form className="mt-3 mb-3" onSubmit={handleSubmit}>
           <div class="form-group">
