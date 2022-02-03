@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is only frontend of Project. API Calling (Used Axios) codes have been written but commented out.
