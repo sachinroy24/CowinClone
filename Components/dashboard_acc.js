@@ -10,10 +10,27 @@ import {
 import Instructions from "./instructions";
 import Navbar from "../Components/Navbar";
 import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Account = (props) => {
-  const JSONdata = props.children;
-  const data = JSON.parse(JSONdata);
+  const uid = props.children;
+
+  const [data, setData] = useState();
+
+  const baseURL = "http://localhost:3000/Users";
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    axios.get(baseURL, { uid }).then((response) => {
+      console.log(response.data[0]);
+      setData(response.data[0]);
+      setIsLoading(false);
+    });
+  }, []);
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   const members = data.members;
   const router = useRouter();
   return (

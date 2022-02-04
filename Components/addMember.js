@@ -11,22 +11,25 @@ const MemberForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const baseURL = "http://localhost:3001/api/crud/add";
-    // const uid=UUID.random();
-    // axios.post(baseURL, {name,age,aadhar,uid,doses:[] }).then((response) => {
-    //   if (response.error) {
-    //     setError("Something Went Wrong");
-    //   } else {
-    //    setData(response.data);
-    //    router.push("/user/dashboard");
-    //   }
-    // });
+    const baseURL = "http://localhost:3000/Members/";
+    const uid = "5341618252";
+    const data = { name, age, aadhar, uid, doses: [] };
+    const JSONdata = JSON.stringify(data);
+    JSONdata = JSONdata.replace(/\//g, "");
+    data = JSON.parse(JSONdata);
+    console.log(JSONdata);
+    axios
+      .post(baseURL, data)
+      .then((response) => {
+        router.push({
+          pathname: "/user/dashboard",
+          query: { uid: "6367126268238393" },
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
     // Above Commented Code will be used for backend purpose and Adding Member to data
-
-    router.push({
-      pathname: "/user/dashboard",
-      query: { uid: "6367126268238393" }, // Here UID is hardcoded otherwise it will come from backend and value would be data.uid
-    });
   };
 
   const handleNameChange = (e) => {
