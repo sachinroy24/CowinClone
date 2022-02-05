@@ -69,25 +69,6 @@
   ],
   "Members": [
     {
-      "id": "1",
-      "name": "Prince Kumar",
-      "age": 21,
-      "aadhar": "5533 1122 9981 3421",
-      "uid": "436718925245",
-      "doses": [
-        {
-          "vaccine": "CovidShield",
-          "date": "24-01-2020",
-          "centre": "UPSC Kalyanpur"
-        },
-        {
-          "vaccine": "CovidShield",
-          "date": "18-05-2020",
-          "centre": "DTC Gujaini"
-        }
-      ]
-    },
-    {
       "id": "2",
       "name": "Shalu Verma",
       "age": 24,
@@ -135,6 +116,23 @@
       "uid": "5341618252",
       "doses": [],
       "id": "Qybnmby"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "1",
+      "area": "Correction in vaccine certificate",
+      "concern": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+    },
+    {
+      "id": "2",
+      "area": "Correction in vaccine certificate",
+      "concern": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+    },
+    {
+      "area": "Report An Bug in Website",
+      "concern": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+      "id": "AG5Gwrh"
     }
   ]
 }

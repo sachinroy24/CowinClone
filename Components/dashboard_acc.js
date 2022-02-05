@@ -53,7 +53,7 @@ const Account = (props) => {
             onClick={() => {
               router.push({
                 pathname: "/user/issue",
-                query: { name: data.name },
+                query: { uid: data.uid, name: data.name },
               });
             }}
           >

@@ -11,7 +11,10 @@ const NB = (props) => {
           {!props.children && <Nav.Link href="/login">Login</Nav.Link>}
           {!props.children && <Nav.Link href="/Signup">Signup</Nav.Link>}
           {props.children && (
-            <Nav.Link href="">{` ${props.children}`}</Nav.Link>
+            <Nav.Link href="/user/dashboard?uid=6367126268238393">{` ${props.children}`}</Nav.Link>
+          )}
+          {props.children && (
+            <Nav.Link href="/user/complaints">Complaints</Nav.Link>
           )}
           {props.children && <Nav.Link href="/login">Logout</Nav.Link>}
         </Nav>

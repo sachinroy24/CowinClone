@@ -7,12 +7,13 @@ export default function Home() {
       <div>
         <Navbar></Navbar>
         <div className="d-flex justify-content-center">
-          <button
+          <a
+            href="/login"
             className="btn btn-outline-primary btn-lg"
             style={{ marginTop: "70px" }}
           >
-            <a href="/login">Login to User Dashboard</a>
-          </button>
+            Login to User Dashboard
+          </a>
         </div>
         <div
           className="bg-light"
